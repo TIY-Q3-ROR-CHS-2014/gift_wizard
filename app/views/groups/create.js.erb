@@ -1,0 +1,5 @@
+console.log("sup")
+$("table.groups").append("<%= escape_javascript(render( 'groups/group', group: @group )) %>")
+// This will clear the form values after a successful submission
+$("#group_name").val("")
+$("#group_email").val("")
